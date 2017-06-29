@@ -1,0 +1,102 @@
+/*botao fechar das tabs*/
+.tab-bar .tab .close-icon {color: #FFF;}
+.tab-bar .tab .close-icon::before {font-size: 13px; font-weight: 400!important;}
+.tab-bar .tab .close-icon:hover {
+	font-weight: bold;
+    opacity: 1.0;
+    color: #0088ff!important;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+/*icone da tab alterada*/
+.tab-bar .tab.modified:not(:hover) .close-icon { border: 2px solid #0088ff!important;}
+/*cor da tab ativa e textos das tabs*/
+.tab-bar .tab {font-size: 12px; border: none;}
+.tab-bar.active, .tab.active {color: #FFF!important; font-size: 13px!important; text-shadow: 0.5px 0 0.5px  #FFF; }
+// Todos as tabs com borda esquerda azul -  .tab-bar .tab::before, .tab-bar::before {border-left: 4px groove #0088ff;}
+.tab-bar.active:before, .tab.active::before {border-left: 4px groove #0088ff;}
+atom-text-editor {background-color: #090a0b;}
+.name.icon.icon-file-directory {font-size: 14px!important;font-weight: 400;color: #0088ff!important;}
+.name.icon.icon-file-directory:before {color: #0088ff;}
+.name.icon.icon-repo {font-weight: bold; font-size: 14px; color: rgba(0, 136, 255, 1)!important;}
+.font-size-regular .tab-bar .tab {font-size: 13px;}
+/*cor de fundo tree-view*/
+.tree-view {background-color: #252525;}
+/*selecao ativa item tree-view */
+.tree-view .selected:before,
+li.file-entry.list-item.selected {
+    background-color: #090a0b;
+    border-left: 4px solid #0088ff;
+    vertical-align: middle;
+}
+.focusable-panel:focus .selected:before {background: #090a0b!important;}
+//cor da linha ativa do ATOM
+atom-text-editor::shadow .lines .line.cursor-line {background-color: rgba(255, 255, 255, 0.12);}
+//cor da linha selecionada
+atom-text-editor::shadow .selection .region {background-color: hsl(189,9%,20%);}
+//personalizando o bracket da tag ativa selecionada
+atom-text-editor::shadow .bracket-matcher .region, .bracket-matcher .region {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 2px double rgba(0, 136, 255, 0.87);
+    position: absolute;
+    z-index: 100;
+    border-radius: 0;
+}
+// cor da linha de numeração
+.line-number {padding-left: -0.5em!important;}
+atom-text-editor::shadow .gutter .line-number {color: #FFF!important;background: #111;}
+//largura coluna de numeracao de linhas
+atom-text-editor .gutter.git-diff-icon .line-number,
+atom-text-editor::shadow .gutter.git-diff-icon .line-number {
+    width: 80%;
+    border-left: none;
+    padding-left: -0.5em!important;
+	margin-left: -32px;
+    margin-right: -20px;
+    font-size: 12px;
+}
+/*cores mouse sobre item da toolbar*/
+.tool-bar .btn:hover,
+.tool-bar button:hover,
+.tool-bar button[class]:hover,
+.tool-bar .btn:focus,
+.tool-bar button:focus,
+.tool-bar button[class]:focus,
+.tool-bar .btn:active,
+.tool-bar button:active,
+.tool-bar button[class]:active,
+.tool-bar .btn:active:focus,
+.tool-bar .button:active:focus,
+.tool-bar .button[class]:active:focus  {
+    background-color: rgba(0, 136, 255, 0.87)!important;
+    color: #FFFFFF;
+}
+.btn:focus, .btn.btn-default:focus, .btn:hover, .btn.btn-default:hover {
+    color: #d5dde2;
+    background-image: none!important;
+	background-color: rgba(0, 136, 255, 0.87)!important;
+}
+/*Cor das barras de rolagem*/
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-track {background-color: #2b4047!important;}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar {width: 8px!important; background-color: rgba(0, 136, 255, 0.87);}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb { border:2px solid #4b5457; background-color: rgba(0, 136, 255, 0.87);}
+.btn.btn-info {
+    color: #d5dde2;
+    text-shadow: none;
+    border: 1px solid #0b74d0;
+    background-color: #0088ff;
+    background-image: linear-gradient(#0088ff, #0088ff);
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 136, 255, 0.87);
+}
+.settings-view .config-menu .nav > li.active > a {
+    color: #ffffff;
+    background-color: rgba(0, 136, 255, 0.87);
+}
+/** estilo minimap
+border-top: 2px double rgba(0, 136, 255, 0.87);
+border-bottom: 2px double rgba(0, 136, 255, 0.87);
+*/

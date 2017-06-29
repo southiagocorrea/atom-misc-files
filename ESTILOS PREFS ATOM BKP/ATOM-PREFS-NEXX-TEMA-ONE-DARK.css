@@ -1,0 +1,29 @@
+//tag selecionada
+atom-text-editor::shadow .bracket-matcher .region, .bracket-matcher .region {
+    /*background-color: rgba(0, 0, 0, 0.06);/*se tenma claro*/
+    background-color: rgba(255, 255, 255, 0.08);/*se tenma escuro*/
+    border-bottom: 2px double #475fd7;
+}
+// efeito mouse sobre os botoes do atom
+.btn:focus, .btn.btn-default:focus, .btn:hover, .btn.btn-default:hover {
+    color: #FFFFFF;
+    background-image: none!important;
+    background: #475fd7!important;
+}
+.tab-bar.active:before, .tab.active::before {border: 2px double #475fd7;}
+//cores mouse sobre item da toolbar
+.tool-bar .btn:hover,
+.tool-bar button:hover,
+.tool-bar button[class]:hover,
+.tool-bar .btn:focus,
+.tool-bar button:focus,
+.tool-bar button[class]:focus,
+.tool-bar .btn:active,
+.tool-bar button:active,
+.tool-bar button[class]:active,
+.tool-bar .btn:active:focus,
+.tool-bar .button:active:focus,
+.tool-bar .button[class]:active:focus  {
+    background: #475fd7!important;
+    color: #FFFFFF;
+}

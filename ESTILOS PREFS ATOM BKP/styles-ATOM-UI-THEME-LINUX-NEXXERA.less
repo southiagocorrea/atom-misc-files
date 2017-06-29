@@ -1,0 +1,106 @@
+/*botao fechar das tabs*/
+.tab-bar .tab .close-icon {color: #FFF;}
+.tab-bar .tab .close-icon::before {font-size: 16px;}
+.tab-bar .tab .close-icon:hover {
+    opacity: 1.0;
+    font-weight: bold;
+    color: red!important;
+    // -webkit-transition: all ease 0.5s;
+    // -o-transition: all ease 0.5s;
+    // -moz-transition: all ease 0.5s;
+    // -ms-transition: all ease 0.5s;
+    // transition: all ease 0.5s;
+}
+atom-text-editor {
+    // background-color: #040505;
+    // background-color: #1f1e1e;
+    // background-color: #000000;
+    text-rendering: optimizeSpeed;
+    background-color: #090a0b;
+}
+.name.icon.icon-file-directory {font-size: 13px!important;font-weight: 600;}
+.font-size-regular .tab-bar .tab {font-size: 13px;}
+/*selecao ativa item tree-view */
+.tree-view .selected:before,
+li.file-entry.list-item.selected {
+    background-color: #090a0b;
+    // border-left: 4px solid #0088ff;
+    border-left: 4px solid #8bc34a;
+}
+
+//cor da linha ativa do ATOM
+atom-text-editor::shadow .lines .line.cursor-line {
+    background-color: rgba(255, 255, 255, 0.12);
+    // border-left: 1px solid #4db6ac;
+    // background-color: #2b4047;
+}
+//cor da linha selecionada
+atom-text-editor::shadow .selection .region {
+    // background-color: DimGray;
+    // background-color: rgba(255, 255, 255, 0.22);
+    // background-color: hsl(329,45%,21%);
+    background-color: hsl(189,9%,30%);
+}
+//personalizando o bracket da tag ativa selecionada
+atom-text-editor::shadow .bracket-matcher .region,
+.bracket-matcher .region {
+    // border: 1px solid rgba(11, 11, 11, 0.6);
+    // border: 5px inset rgba(255, 255, 255, 0.3);
+    // border-bottom: 2px double #0088ff;
+    // border-bottom: 2px double lime;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px double #4db6ac;
+    position: absolute;
+    z-index: 100;
+    border-radius: 0;
+}
+// cor da linha de numeração
+atom-text-editor::shadow .gutter .line-number {color: #FFF;background: #111;}
+//largura coluna de numeracao de linhas
+atom-text-editor .gutter.git-diff-icon .line-number,
+atom-text-editor::shadow .gutter.git-diff-icon .line-number {
+    max-width: 100%!important;
+    border-left: none;
+    padding-left: 0em;
+    font-size: 12px;
+}
+/*cores mouse sobre item da toolbar*/
+.tool-bar .btn:hover,
+.tool-bar button:hover,
+.tool-bar button[class]:hover,
+.tool-bar .btn:focus,
+.tool-bar button:focus,
+.tool-bar button[class]:focus,
+.tool-bar .btn:active,
+.tool-bar button:active,
+.tool-bar button[class]:active,
+.tool-bar .btn:active:focus,
+.tool-bar .button:active:focus,
+.tool-bar .button[class]:active:focus  {
+    background: #40bd45!important;
+    //background: #0088ff!important;
+    color: #FFFFFF;
+}
+/*Cor das barras de rolagem*/
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.5rem;
+    z-index: 99999;
+}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb {
+    // background: rgba(lime, lime, lime, 0.77);
+    background: rgba(58, 160, 226, 0.77);
+    border-radius: 0;
+    border: none;
+}
+/*distancia entre as linhas da tree-view
+ .list-tree li:not(.list-nested-item) { line-height: 2.25em;}
+ CONFIGURACAO minimap-controls
+background-color: #FFF;
+opacity: .3;
+cursor: -webkit-grab;
+border-top: 2px double #f44336;
+border-bottom: 2px double #f44336;
+
+border-bottom: 2px double #0088ff;
+*/

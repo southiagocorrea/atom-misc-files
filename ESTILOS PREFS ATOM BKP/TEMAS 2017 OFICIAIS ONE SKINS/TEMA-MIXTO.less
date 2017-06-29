@@ -1,0 +1,38 @@
+/*selecao ativa item tree-view */
+.tree-view .selected:before, li.file-entry.list-item.selected {
+    border-left: 4px solid #0088ff;
+    background-color: rgba(255, 255, 255, 0.13); /*se tema escuro, se claro comente*/
+}
+//tag selecionada
+.bracket-matcher .region,atom-text-editor::shadow .bracket-matcher .region {
+    background-color: rgba(150, 150, 150, 0.22); /*tema claro*/
+    border-bottom: 2px solid #0088ff; /*tema claro*/
+    border-bottom-width: medium;
+    border-radius: 0px;
+    z-index: 9;
+    /* background-color: rgba(255, 255, 255, 0.09);tema escuro*/
+    /* border-bottom: 2px double #0bb6ff; tema escuro*/
+}
+//efeito mouse sobre botoes
+.btn.btn-default:focus, .btn.btn-default:hover, .btn:focus, .btn:hover {
+    color: #FFFFFF;
+    background-image: none!important;
+    background: #475fd7!important;
+}
+//aba ativa borda azulada
+.tab-bar.active:before, .tab.active::before {border-left: 6px ridge #475fd7;}
+/*icone da tab alterada*/
+.tab-bar .tab.modified:not(:hover) .close-icon {
+    border: 2px double #ff0000!important;
+    color: #ff0000!important;
+}
+
+//cor da linha ativa do ATOM
+atom-text-editor::shadow .lines .line.cursor-line {
+    /* background-color: rgba(255, 255, 255, 0.1); tema escuro */
+    background-color: #f6f5f5; /* tema branco */
+    z-index: 1;
+}
+// cor da linha de numeração
+/* atom-text-editor::shadow .gutter .line-number { color: #cdcdcd!important;} /*tema escuro*/
+

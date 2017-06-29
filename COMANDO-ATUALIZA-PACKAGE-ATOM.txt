@@ -1,0 +1,4 @@
+Comando para publicar update ou package pra atom:
+
+
+apm publish minor

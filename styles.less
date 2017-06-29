@@ -1,0 +1,60 @@
+ //close-icon from tabs
+ div.close-icon{margin-top: -8px; font-size:16px}
+ .tab-bar .tab .close-icon:hover {
+   opacity: .7;
+   color: #FF0000;
+   -webkit-transition: all ease .5s;
+   -o-transition: all ease .5s;
+   -moz-transition: all ease .5s;
+   -ms-transition: all ease .5s;
+   transition: all ease .5s;
+ }
+.tree-view {
+  //background: #24282b ;
+  // background: #21252b;
+  // background-color: #282c34;
+  background-color: #23272e;
+}
+.tree-view .selected:before {
+  background: #31363f;
+  border-left: 4px solid #0088ff;
+}
+//icons from tre-vieww
+span.name.icon.icon-file-directory::before{color:#b3b3b3}
+// style the background and foreground colors on the atom-text-editor-element
+atom-text-editor {
+  //background-color: #21252b;
+  //background-color: #24282b ;
+  background-color: #171A1D;
+  text-rendering: optimizeSpeed;
+}
+atom-text-editor::shadow .cursor{border-color:#fff}
+//setting fonts from theme
+.theme-one-dark-ui {
+  .tab-bar { font-size: 12px; }
+  .tree-view { font-size: 12px; }
+  .status-bar { font-size: 12px; }
+}
+//.tab-bar .title {text-indent: -20%;}
+.tab-bar .tab::before { width: 3px; border-radius: 0px;}
+atom-text-editor .line.cursor-line, :host .line.cursor-line {background-color: rgba(198, 198, 198, 0.33)!important;}
+
+//personalizando o bracket da tag ativa selecionada
+atom-text-editor::shadow .bracket-matcher .region, .bracket-matcher .region {
+    // border: 1px solid rgba(11, 11, 11, 0.6);
+    // border: 5px inset rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0px;
+    // border-bottom: 2px double #4db6ac;
+    //border-bottom: 2px double lime;
+    border-bottom: 2px double #0088ff;
+    position: absolute;
+    z-index: 100;
+}
+/* CONFIGURACAO minimap-controls
+background-color: #FFF;
+opacity: .3;
+cursor: -webkit-grab;
+border-top: 2px solid cyan;
+border-bottom: 2px solid cyan;
+*/

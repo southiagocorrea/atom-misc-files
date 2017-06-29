@@ -1,0 +1,62 @@
+"*":
+  "exception-reporting":
+    userId: "237c417c-150b-1ebe-2f6e-7db9a88a49e2"
+  core:
+    disabledPackages: [
+      "autocomplete-phpunit"
+      "tool-bar-main"
+      "atom-minify"
+      "php-cs-fixer"
+      "script"
+      "autocomplete-python"
+    ]
+    followSymlinks: false
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    autoIndentOnPaste: true
+    softWrap: true
+    fontFamily: "Roboto Mono"
+    tabLength: 4
+  welcome:
+    showOnStartup: false
+    openLastProjetct: true
+  "atom-beautify":
+    _analyticsUserId: "60b18413-6500-419c-bc5d-2c561518e939"
+  "file-icons": {}
+  minimap:
+    plugins:
+      "color-highlight": true
+      "git-diff": true
+    absoluteMode: true
+  "tool-bar":
+    position: "Left"
+    linter: {}
+  pigments:
+    extendAutocompleteToVariables: true
+    mergeColorDuplicates: true
+    markerType: "gutter"
+  "autocomplete-plus": {}
+  autoprefixer: {}
+  linter:
+    showErrorTabProject: false
+  "atom-autocomplete-php": {}
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+    remoteProjectsConfig: []
+  "git-history": {}
+  "merge-conflicts":
+    gitPath: "C:\\Program Files\\Git\\git-cmd.exe"
+  "bracket-matcher": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "atom-minify": {}
+  "local-history": {}
+  "npm-install": {}
+".source.ts":
+  editor:
+    softWrapAtPreferredLineLength: true
+"atom-text-editor.autocomplete-active":
+  tab: "unset!"
+  "ctrl-shift-a": "autocomplete-plus:confirm"
+  "ctrl-alt-.": "bracket-matcher:close-tag"

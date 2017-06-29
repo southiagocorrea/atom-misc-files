@@ -1,0 +1,64 @@
+//tag selecionada
+atom-text-editor { background: #141313;}
+
+.bracket-matcher .region,atom-text-editor::shadow .bracket-matcher .region {
+    /*background-color: rgba(0, 0, 0, 0.06);/*se tenma claro*/
+    background-color: rgba(255, 255, 255, 0.08);/*se tenma escuro*/
+    border-bottom: 2px double #4785d7;
+}
+// efeito mouse sobre os botoes do atom
+
+.btn.btn-default:focus,
+.btn.btn-default:hover,
+.btn:focus,
+.btn:hover {
+    color: #FFFFFF;
+    background-image: none!important;
+    background: #475fd7!important;
+}
+//aba ativa borda azulada
+.tab-bar.active:before, .tab.active::before {border-left: 6px ridge #475fd7;}
+/*icone da tab alterada*/
+.tab-bar .tab.modified:not(:hover) .close-icon {
+    border: 2px double #ff0000!important;
+    color: #ff0000!important;
+}
+.tree-view  {background-color: #202020;}
+/*selecao ativa item tree-view */
+.tree-view .selected:before, li.file-entry.list-item.selected {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 2px solid #0088ff;
+}
+//cor da linha ativa do ATOM
+atom-text-editor::shadow .lines .line.cursor-line {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+// cor da linha de numeração
+
+atom-text-editor::shadow .gutter .line-number {
+    color: #FFF!important;
+    width: 2em;
+}
+
+.settings-view .config-menu .nav > li.active > a {
+    color: #ffffff;
+    background-color: rgba(0, 136, 255, 0.87);
+}
+//cores mouse sobre item da toolbar
+
+.tool-bar .btn:active,
+.tool-bar .btn:active:focus,
+.tool-bar .btn:focus,
+.tool-bar .btn:hover,
+.tool-bar .button:active:focus,
+.tool-bar .button[class]:active:focus,
+.tool-bar button:active,
+.tool-bar button:focus,
+.tool-bar button:hover,
+.tool-bar button[class]:active,
+.tool-bar button[class]:focus,
+.tool-bar button[class]:hover {
+    background: #475fd7!important;
+    color: #FFFFFF;
+}
+

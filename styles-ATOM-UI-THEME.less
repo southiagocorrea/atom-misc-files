@@ -1,0 +1,73 @@
+.tab-bar .tab .close-icon {color: #FFF;}
+.tab-bar .tab .close-icon:hover {
+    opacity: 1.0;
+    font-weight: bold;
+    color: yellow!important;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+atom-text-editor {
+    // background-color: #040505;
+    background-color: #090a0b;
+    // background-color: #000000;
+    text-rendering: optimizeSpeed;
+}
+.tree-view {font-size: 12px;}
+
+//selecao ativa item tree-view
+.tree-view .selected:before,
+li.file-entry.list-item.selected {
+    padding-bottom: 4px;
+    background-color: #090a0b;
+    // border-left: 100px solid #000;
+}
+
+//cor da linha ativa do ATOM
+atom-text-editor::shadow .lines .line.cursor-line {
+    background-color: rgba(255, 255, 255, 0.12);
+    // border-left: 1px solid #4db6ac;
+    // background-color: #2b4047;
+}
+//cor da linha selecionada
+atom-text-editor::shadow .selection .region {
+    // background-color: DimGray;
+    // background-color: rgba(255, 255, 255, 0.22);
+    // background-color: hsl(329,45%,21%);
+    background-color: hsl(189,9%,30%);
+}
+//personalizando o bracket da tag ativa selecionada
+atom-text-editor::shadow .bracket-matcher .region,
+.bracket-matcher .region {
+    // border: 1px solid rgba(11, 11, 11, 0.6);
+    // border: 5px inset rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0;
+    // border-bottom: 2px double #0088ff;
+    // border-bottom: 2px double lime;
+    border-bottom: 1px double #4db6ac;
+    position: absolute;
+    z-index: 100;
+}
+
+// COR LINHA NUMERACAO
+atom-text-editor::shadow .gutter .line-number {color: #FFF;}
+//largura coluna de numeracao de linhas
+atom-text-editor .gutter.git-diff-icon .line-number, atom-text-editor::shadow .gutter.git-diff-icon .line-number {
+    max-width: 100%;
+    border-left: none;
+    padding-left: 0em;
+    font-size: 12px;
+}
+
+//distancia entre as linhas da tree-view
+// .list-tree li:not(.list-nested-item) { line-height: 2.25em;}
+/* CONFIGURACAO minimap-controls
+background-color: #FFF;
+opacity: .3;
+cursor: -webkit-grab;
+border-top: 2px solid #2196F3;
+border-bottom: 2px solid #2196F3;
+*/

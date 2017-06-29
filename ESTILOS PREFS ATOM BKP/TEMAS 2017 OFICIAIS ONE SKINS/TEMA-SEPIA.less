@@ -1,0 +1,32 @@
+.tree-view  {background-color: #222222;} /*se tema sepia, se escuro, comente*/
+/*selecao ativa item tree-view */
+.tree-view .selected:before, li.file-entry.list-item.selected {
+    border-left: 4px solid #f1e9be; //se tema sepia
+    background-color: rgba(255, 255, 255, 0.13); /*se tema escuro, se claro comente*/
+}
+//tag selecionada
+.bracket-matcher .region,atom-text-editor::shadow .bracket-matcher .region {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #000000;
+}
+//efeito mouse sobre botoes
+.btn.btn-default:focus, .btn.btn-default:hover, .btn:focus, .btn:hover {
+    background-image: none!important;
+    background:  #475fd7!important;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 0px;
+}
+//aba ativa borda azulada
+.tab-bar.active:before, .tab.active::before {border-left: 6px ridge #475fd7;}
+/*icone da tab alterada*/
+.tab-bar .tab.modified:not(:hover) .close-icon {
+    border: 2px double #ff0000!important;
+    color: #ff0000!important;
+}
+
+//cor da linha ativa do ATOM
+atom-text-editor::shadow .lines .line.cursor-line {
+    background-color: rgba(255, 255, 255, 0.4);
+
+}
